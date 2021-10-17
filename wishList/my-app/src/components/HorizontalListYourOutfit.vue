@@ -5,14 +5,14 @@
     responsive: [
       { end: 300, size: 1 },
       { start: 150, end: 300, size: 2 },
-      { size: 6 },
+      { size: 4 },
     ],
   }"
 >
 
 
   <template v-slot:default="{item}">
-    <div class="item">
+    <div class="item grid-list-md">
       <h5>{{item.title}}</h5>
 <v-card  
     height="300"
@@ -35,11 +35,11 @@
       <i v-bind:class="['is_fav' ?  'fa-star' : 'fa-star-o', 'fa']" aria-hidden="true">
         </i></button>        
     </v-img>
-    <div class="my-0 text-subtitle-1">
+    <div class=" text-subtitle-1">
        CATEGORY
       </div>
-    <v-card-title  class="my-0 text-subtitle-2">Expanded Product Name</v-card-title>
-      <div class="my-0 text-subtitle-0 ">
+    <v-card-title  class=" text-subtitle-2">Expanded Product Name</v-card-title>
+      <div class=" text-subtitle-0 ">
         $ 123
       </div>
   <v-card-text>
@@ -47,7 +47,6 @@
         align="center"
         class="xs-0"
       >
-  Hell njo
         <v-rating
           v-model="rating"
           color="yellow darken-3"
@@ -94,7 +93,7 @@ import VueHorizontalList from "vue-horizontal-list";
     },
 
     data: () => ({
-items: [{title:"",content:"" },{title:"",content:"" } ,{title:"",content:"" },{title:"",content:"" },{title:"",content:"" },{title:"",content:"1545sdezezezesdsd" },{title:"",content:"" },{title:"",content:"" }]
+items: [{ title: "", content: "Content item with description", margin : 20 },{ title: "", content: "Content item with description", margin : 0 },{ title: "", content: "Content item with description", margin : 0 },{ title: "", content: "Content item with description", margin : 0 },{ title: "", content: "Content item with description", margin : 0 },{ title: "", content: "Content item with description", margin : 0 },],
     }),
   }
 </script>

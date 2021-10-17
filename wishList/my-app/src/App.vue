@@ -1,12 +1,12 @@
 <template>
   <v-app   max-width ="70%">
     <v-main >
-
+<v-container class="ma-16"> 
       RELATED PRODUCTS
       <HorizontalListRelated></HorizontalListRelated>
        YOUR OUTFIT
       <HorizontalListYourOutfit></HorizontalListYourOutfit>
-      
+</v-container>
     </v-main>
   </v-app>
 </template>
@@ -21,12 +21,8 @@ export default {
   name: "App",
 
   components: {
-    // RelatedProduct: RelatedProduct,
-    // WishProduct : WishProduct,
-    // BtnFav : BtnFav,
     HorizontalListRelated :HorizontalListRelated,
     HorizontalListYourOutfit : HorizontalListYourOutfit 
-
   },
 
   data: () => ({
@@ -36,9 +32,9 @@ export default {
       windowed: 1200,
 
       // Because: #app {padding: 80px 24px;}
-      padding: 24,
+      padding: 15,
     },
-    items: [{ title: "Item 0", content: "Content item with description" }],
+    items: [{ title: "Item 0", content: "Content item with description", margin : 0 },],
   }),
 };
 </script>

@@ -35,11 +35,11 @@
       <i v-bind:class="['is_fav' ?  'fa-star' : 'fa-star-o', 'fa']" aria-hidden="true">
         </i></v-btn>        
     </v-img>
-    <div class="my-0 text-subtitle-1">
+    <div class=" ">
        CATEGORY
       </div>
-    <v-card-title class="my-0 text-subtitle-2">Expanded Product</v-card-title>
-      <div class="ml-0 text-subtitle-0 ">$ 123 </div>
+    <v-card-title class=" ">Expanded Product</v-card-title>
+      <div class="  ">$ 123 </div>
   <v-card-text>
       <v-row
         align="center"
